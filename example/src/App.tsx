@@ -1,31 +1,22 @@
 import * as React from 'react';
+import { useState } from 'react';
+import { View, Text } from 'react-native';
+import { Button } from 'react-native-to-do-components';
+//import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-to-do-components';
-
-export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
+const App: React.FunctionComponent = () => {
+  const [count, setCount] = useState(0);
 
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
+    //<SafeAreaProvider>
+    <View
+      style={{ justifyContent: 'center', alignItems: 'center', height: 800 }}
+    >
+      <Text>{count}</Text>
+      <Button OnPress={() => setCount(count + 1)} text="Increase" />
     </View>
+    //</SafeAreaProvider>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-  },
-});
+export default App;

@@ -1,6 +1,6 @@
 {
   "name": "react-native-to-do-components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Components for toDo by Miguel Correia",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -157,5 +157,8 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "react-native-safe-area-context": "^4.9.0"
   }
 }
