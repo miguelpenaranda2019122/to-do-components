@@ -42,14 +42,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miguelpenaranda2019122/react-native-to-do-components.git"
+    "url": "https://github.com/miguelpenaranda2019122/to-do-components"
   },
   "author": "miguelcorreia1501 <miguelcorreia1501@gmail.com> (https://github.com/miguelpenaranda2019122)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/miguelpenaranda2019122/react-native-to-do-components/issues"
+    "url": "https://github.com/miguelpenaranda2019122/to-do-components/issues"
   },
-  "homepage": "https://github.com/miguelpenaranda2019122/react-native-to-do-components#readme",
+  "homepage": "https://github.com/miguelpenaranda2019122/to-do-components#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
